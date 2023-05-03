@@ -43,8 +43,7 @@ bool Scene::Start()
 	sign = app->tex->Load("Assets/Textures/sign.png");
 	inventory = app->tex->Load("Assets/Textures/UI/inventory.png");
 
-	animaciónCamera.Set();
-	animaciónCamera.AddTween(500, 200, BACK_IN_OUT);
+	//TODO 3: Set and add a tween to the camera
 
 	player1.x = 300;
 	player1.y = 300;
@@ -55,24 +54,9 @@ bool Scene::Start()
 	button2 = app->tex->Load("Assets/Textures/UI/BackTitle.png");
 	button3 = app->tex->Load("Assets/Textures/UI/Continue.png");
 
-	animacion_UI_inventory.Set();
-	animacion_UI_inventory.smoothness = 4;
-	animacion_UI_inventory.AddTween(100, 50, EXPONENTIAL_OUT);
+	//TODO 3: Set and add a tween to the inventory
 
-	animacion_UI_fondo.Set();
-	animacion_UI_fondo.AddTween(100, 150, BACK_OUT);
-
-	animacion_UI_BackToTitle.Set();
-	animacion_UI_BackToTitle.Wait(30);
-	animacion_UI_BackToTitle.AddTween(100, 80, BOUNCE_OUT);
-
-	animacion_UI_Back.Set();
-	animacion_UI_Back.Wait(40);
-	animacion_UI_Back.AddTween(100, 80, SINUSOIDAL_IN);
-
-	animacion_UI_Continue.Set();
-	animacion_UI_Continue.Wait(50);
-	animacion_UI_Continue.AddTween(100, 100, BACK_OUT);
+	//TODO 3: Set and add a tween for the all the Menu
 
 	menuOpen = false;
 	inventoryOpen = false;
@@ -89,18 +73,8 @@ bool Scene::PreUpdate()
 // Called each loop iteration
 bool Scene::Update(float dt)
 {
-	
-	switch (example)
-	{
-	
-	break;		
-	
-	case 1:
-	{
-
 		if (!menuOpen)
 		{
-
 			if (app->input->GetKey(SDL_SCANCODE_D) == KEY_REPEAT)
 			{
 				player1.x += player1.speed;
@@ -108,31 +82,29 @@ bool Scene::Update(float dt)
 			if (app->input->GetKey(SDL_SCANCODE_A) == KEY_REPEAT)
 			{
 				player1.x -= player1.speed;
-
 			}
 			if (app->input->GetKey(SDL_SCANCODE_W) == KEY_REPEAT)
 			{
 				player1.y -= player1.speed;
-
 			}
 			if (app->input->GetKey(SDL_SCANCODE_S) == KEY_REPEAT)
 			{
 				player1.y += player1.speed;
-
 			}
 		}
 
 		if (!menuOpen) animaciónCamera.Step(2, false);
-		
+		//"Collider"
 		if ((player1.x > 500 && player1.x < 580) &&
 			(player1.y > 400 && player1.y < 480))
 		{
-			animaciónCamera.Foward();
+			//TODO 4: Forward the camera
 		}
 		else 
 		{
-			animaciónCamera.Backward();
+			//TODO 4: Backward the camera
 		}
+
 		//Dibujo Mapa
 		app->render->DrawTexture(map, 100, 30);
 		app->render->DrawTexture(map_2, 1600, 30);
@@ -141,57 +113,43 @@ bool Scene::Update(float dt)
 		SDL_Rect playerRect = { player1.x - 20,player1.y - 60,60,60  };
 		app->render->DrawRectangle(playerRect, 255, 255, 255, 180);
 			
+		//Set the camerea to a point
 		float point = animaciónCamera.GetPoint();
-
 		app->render->camera.x = -point * 300;
-
-		
 
 		if (app->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN)
 		{
 			menuOpen = !menuOpen;
-
 		}
 
 		if (menuOpen)
 		{
-			animacion_UI_fondo.Foward();
-			animacion_UI_Continue.Foward();
-			animacion_UI_Back.Foward();
-			animacion_UI_BackToTitle.Foward();
-			
-	
-
+			//TODO 4: Forward the Menu
 		}
 		else 
 		{
-			animacion_UI_fondo.Backward();
-			animacion_UI_Continue.Backward();
-			animacion_UI_Back.Backward();
-			animacion_UI_BackToTitle.Backward();
+			//TODO 4:Backward the Menu
 
 			if (app->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
 			{
 				inventoryOpen = !inventoryOpen;
-
 			}
 			
 		}
 
-
+		//Reset de la animación
 		animacion_UI_inventory.Step(1, false);
 
 		if (inventoryOpen)
 		{
-			animacion_UI_inventory.Foward();
-
+			//TODO 4: Forward the Inventory
 		}
 		else
 		{
-			animacion_UI_inventory.Backward();
-
+			//TODO 4: Backward the Inventory
 		}
 
+		//Resetea todas las animaciones
 		animacion_UI_fondo.Step(1, false);
 		animacion_UI_BackToTitle.Step(1, false);
 		animacion_UI_Back.Step(1, false);
@@ -213,28 +171,8 @@ bool Scene::Update(float dt)
 		app->fonts->DrawText(775, 40 + 25 * 3, font3, "Move to the Sign to move camera");
 
 		//Applicamos al punto que queremos que vaya la textura para hacer la animación de todo el menu
-		point = animacion_UI_fondo.GetPoint();
-		app->render->DrawTexture(panel, 0 , offset + point * (0 - offset));
-
-		point = animacion_UI_Continue.GetPoint();
-		app->render->DrawTexture(button3, 1280/2-150, offset + point * (415 - offset));
-
-		point = animacion_UI_Back.GetPoint();
-		app->render->DrawTexture(button2, 1280 / 2 - 150, offset + point * (460 - offset));
-
-		point = animacion_UI_BackToTitle.GetPoint();
-		app->render->DrawTexture(button1, 1280 / 2 - 150, offset + point * (505 - offset));
 		
-		
-
-		
-	}
-	break;
-	
-	default:
-
-		break;
-	}
+		//TODO 5: Set a concret point to the animation and draw the texture
 
 	return true;
 }
