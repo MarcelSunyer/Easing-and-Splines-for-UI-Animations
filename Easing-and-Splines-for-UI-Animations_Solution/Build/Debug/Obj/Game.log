@@ -1,75 +1,75 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
   Main.cpp
   App.cpp
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(54,47): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(54,47): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(169,38): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(169,38): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(178,33): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(178,33): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\App.cpp(130,19): warning C4244: 'inicializando': conversión de 'float' a 'long'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\App.cpp(133,19): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\App.cpp(140,17): warning C4244: 'argumento': conversión de 'double' a 'Uint32'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\App.cpp(130,19): warning C4244: 'inicializando': conversión de 'float' a 'long'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\App.cpp(133,19): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\App.cpp(140,17): warning C4244: 'argumento': conversión de 'double' a 'Uint32'; posible pérdida de datos
   Audio.cpp
   Input.cpp
   ModuleFonts.cpp
   Scene.cpp
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(54,47): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(54,47): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(169,38): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(169,38): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(178,33): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(178,33): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(106,31): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(110,31): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(115,31): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(120,31): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(146,34): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(205,66): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(217,46): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(220,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(223,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(226,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(106,31): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(110,31): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(115,31): warning C4244: '-=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(120,31): warning C4244: '+=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(146,34): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(205,66): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(217,46): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(220,56): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(223,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Scene.cpp(226,60): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Render.cpp
   Textures.cpp
   Tweening.cpp
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(54,47): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(54,47): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(169,38): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(169,38): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(178,33): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.h(178,33): warning C4244: 'argumento': conversión de 'float' a 'T'; posible pérdida de datos
           with
           [
               T=int
           ]
-D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.cpp(7,19): warning C4305: '=': truncamiento de 'double' a 'float'
+D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Game\Source\Tweening.cpp(7,19): warning C4305: '=': truncamiento de 'double' a 'float'
   Window.cpp
   Log.cpp
   pugixml.cpp
   Generando código...
-  Game.vcxproj -> D:\Escritorio\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Build\Debug\Game.exe
+  Game.vcxproj -> D:\Documentos\GitHub\Easing-and-Splines-for-UI-Animations\Easing-and-Splines-for-UI-Animations_Solution\Build\Debug\Game.exe
           1 archivo(s) copiado(s).
