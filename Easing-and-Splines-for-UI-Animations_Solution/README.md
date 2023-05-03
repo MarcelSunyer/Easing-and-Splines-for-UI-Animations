@@ -1,4 +1,4 @@
-# Easing for UI Animations and a bit more...
+# Easing and Splines for UI Animations 
 
 ## Description
 
