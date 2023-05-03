@@ -89,14 +89,6 @@ bool Scene::PreUpdate()
 // Called each loop iteration
 bool Scene::Update(float dt)
 {
-	
-	switch (example)
-	{
-	
-	break;		
-	
-	case 1:
-	{
 
 		if (!menuOpen)
 		{
@@ -145,12 +137,9 @@ bool Scene::Update(float dt)
 
 		app->render->camera.x = -point * 300;
 
-		
-
 		if (app->input->GetKey(SDL_SCANCODE_P) == KEY_DOWN)
 		{
 			menuOpen = !menuOpen;
-
 		}
 
 		if (menuOpen)
@@ -159,9 +148,6 @@ bool Scene::Update(float dt)
 			animacion_UI_Continue.Foward();
 			animacion_UI_Back.Foward();
 			animacion_UI_BackToTitle.Foward();
-			
-	
-
 		}
 		else 
 		{
@@ -173,44 +159,36 @@ bool Scene::Update(float dt)
 			if (app->input->GetKey(SDL_SCANCODE_I) == KEY_DOWN)
 			{
 				inventoryOpen = !inventoryOpen;
-
 			}
-			
 		}
-
 
 		animacion_UI_inventory.Step(1, false);
 
 		if (inventoryOpen)
 		{
 			animacion_UI_inventory.Foward();
-
 		}
 		else
 		{
 			animacion_UI_inventory.Backward();
-
 		}
 
 		animacion_UI_fondo.Step(1, false);
 		animacion_UI_BackToTitle.Step(1, false);
 		animacion_UI_Back.Step(1, false);
 		animacion_UI_Continue.Step(1, false);
-
-		
 		
 		int offset = 720;
 
 		point = animacion_UI_inventory.GetPoint();
 		app->render->DrawTexture(inventory, 1280 / 2 - 528 / 2, offset + point * (400 - offset));
 
-
 		offset = -750;
 
 		app->fonts->DrawText(775, 40, font3, "Press [P] to Pause and [I] ");
 		app->fonts->DrawText(775, 40 + 20, font3, "to open Inventory");
 		app->fonts->DrawText(775, 40 + 25*2, font3, "Use [Arrows] to move the player");
-		app->fonts->DrawText(775, 40 + 25 * 3, font3, "Move to the Sign to move camera");
+		app->fonts->DrawText(775, 40 + 25 * 3, font3, "Move to the Telescope to move camera");
 
 		//Applicamos al punto que queremos que vaya la textura para hacer la animación de todo el menu
 		point = animacion_UI_fondo.GetPoint();
@@ -225,17 +203,6 @@ bool Scene::Update(float dt)
 		point = animacion_UI_BackToTitle.GetPoint();
 		app->render->DrawTexture(button1, 1280 / 2 - 150, offset + point * (505 - offset));
 		
-		
-
-		
-	}
-	break;
-	
-	default:
-
-		break;
-	}
-
 	return true;
 }
 
